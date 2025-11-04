@@ -1,14 +1,9 @@
 spring:
-  application:
-    name: tpo-prog3
-
+  neo4j:
+    uri: bolt://localhost:7687
+    authentication:
+      username: neo4j
+      password: neo4j123
   data:
     neo4j:
-      uri: bolt://localhost:7687
-      database: neo4j   # esta línea apunta a la base activa
-      authentication:
-        username: neo4j
-        password: neo4j123  # o la que pusiste al crear la instancia
-
-server:
-  port: 8080
+      database: neo4j   # o tpo, según tu DB real
